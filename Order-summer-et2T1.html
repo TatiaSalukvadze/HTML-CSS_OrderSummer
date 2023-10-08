@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order summer component</title>
+    <style>
+        *{
+            margin:0;
+        }
+        body{
+            background-color: #F2F2F2;
+        }
+        svg path{
+            fill: #D6E1FF;
+        }
+        .main{
+            width: 450px;
+            background: #FFF;
+           text-align:center;    
+            border-radius:20px;     
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+
+        }
+        .main img{
+             border-radius:20px 20px 0 0;
+        }
+        h1{
+            color: #1F2E55;
+            padding:20px;
+        }
+        p{
+            color: #717FA6;
+            line-height:26px;
+            width:80%;
+            margin:auto;
+        }
+        #flex{
+            box-sizing: border-box;
+            width: 90%;
+            margin:20px auto;
+            border-radius: 11px;
+            background: #F7F9FF;
+            padding:20px;
+            display:flex;
+            justify-content: space-around;
+        }
+        #flex span{
+            text-align:left;
+            margin-right:30%;
+        }
+         #flex button,#cancel{
+            all: unset;
+              cursor: pointer;
+         }
+        #flex button{
+             
+             text-decoration-line: underline;
+             color: #382AE1;
+        }
+        
+        #pay{
+            width:90%;
+            height:50px;
+            color:white;
+            border-radius: 11px;
+            background: #382AE1;
+            box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+
+        }
+        #cancel{
+            color: #717FA6;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+
+        <svg viewBox="0 0 500 200">
+            <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
+        </svg>
+        <div class="main">
+            <img src="./images/illustration-hero.svg" />
+            <h1>Order Summery</h1>
+            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            <div id="flex">
+                <img src="./images/icon-music.svg"/>
+                <span><h2>Annual Plan</h2><p>$59.99/year</p></span>
+                <button>change</button>
+            </div>
+            <button id="pay">Proceed to Payment</button>
+            <button id="cancel">cancel order</button>
+        </div>
+        
+        
+
+</body>
+</html>
